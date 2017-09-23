@@ -1,0 +1,113 @@
+p {
+  margin: 0;
+}
+.dv-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-title {
+  background: antiquewhite;
+  color: #C0392B;
+  padding: 15px;
+}
+h1, h2, h3, h4,h5, h6{
+  font-family: 'Playfair Display', serif;
+  color: gray;
+}
+p, small, button{
+  font-family: 'Raleway', sans-serif;
+}
+small{
+  color: gray;
+}
+h1, h3{
+  text-align: center;
+  margin: 0 0 15px 0
+}  
+.dv-items-container{
+  display: flex;
+  height: 70vh;  
+  flex-direction: row;
+  justify-content: center;  
+  border-bottom: 1px solid #C0392B;
+}  
+.debt-item{
+  margin: 0 15px;
+  position: relative;
+  width: 150px;
+
+}
+.dv-total{
+  bottom: 0;
+  width: 100%;
+  max-height: 0;
+  background-color: #4DAF7C;
+  position: absolute;
+}
+.dv-payoff, .dv-total{
+  cursor: pointer;
+
+  -webkit-transition: max-height 1s; 
+  -moz-transition: max-height 1s; 
+  -ms-transition: max-height 1s; 
+  -o-transition: max-height 1s; 
+  transition: max-height 1s;  
+  height: 100%;
+  max-height: 0;
+}
+.dv-payoff{
+  width: 100%;
+  max-height: 0;
+  bottom: 0;  
+  background-color: #C0392B;
+  position: absolute;
+}
+.dv-content{
+  position: absolute;
+  margin: 15px;
+  bottom: -75px;  
+}
+
+.dv-content p{
+  font-size: 12px;
+  color: #373737;
+}
+
+.item-percentage{
+  position: absolute;
+  bottom: 20%;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  color: #323232;
+  margin: 0;
+}
+
+.debt-total{
+  color: #C0392B;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #4DAF7C;
+  font-weight: 700;
+  padding: 8px 28px
+}
+
+input{
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.edit-panel {
+  position: absolute;
+}
